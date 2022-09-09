@@ -1,0 +1,10 @@
+<h1>Categories:</h1>
+
+<% categories.forEach(category => { %>
+    <ul>
+        <li><%= category.dataValues.name %> (<a href="/categories/<%=category.dataValues.id%>">Projects</a>)</li>
+    </ul>
+
+
+
+<%})%>

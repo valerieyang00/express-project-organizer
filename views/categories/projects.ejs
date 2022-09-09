@@ -1,0 +1,11 @@
+<h1>Projects with <%=category.dataValues.name%> Category</h1>
+
+<% projects.forEach (project => { %>
+    <ol><%=project.name%>
+    <ul>
+        <li><a href="<%=project.githubLink%>">Github</a></li>
+        <li><a href="<%=project.deployedLink%>">Deployment</a></li>
+    </ul>
+    </ol>
+
+<%})%>
